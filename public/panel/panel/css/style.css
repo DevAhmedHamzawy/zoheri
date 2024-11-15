@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;700;800;900&display=swap');
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif; overflow-x: hidden; }
+
+a { color: #212529; }
+ul {list-style-type: none;}
+.bg-mattBlackLight { background-color: #2A3040; }
+
+.text-mattBlackLight { color: #303337; }
+
+.bg-mattBlackDark, body { background-color: #F1F4F6; }
+ .nav-link:hover, .nav-link.active { background-color: rgba(0,0,0,0.1); }
+
+.text-mattBlackDark { color: #212121; }
+
+.bg-mattGray { background-color: #878d8d; }
+
+.text-mattGray, .nav-link .icon, .nav-link .text {color: #b3cbdd !important; font-weight: 400; }
+
+.bg-mattRed { background-color: #ec6271; }
+
+.text-mattRed, .nav-link:hover .icon, .nav-link:hover .text, .nav-link.active .icon, .nav-link.active { color: rgba(0,0,0,0.1); }
+
+.dashboard-card { background-color: #F9FAFB !important; }
+
+.the_image_changing { width:120px;height:120px;margin: 16px 44.5%;background-color: black; }
+
+.navbar {
+  background-color: #F9FAFB;
+  color: #495057;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+.user-menu-mobile { display: none; margin-top: -52px; margin-right: 89%;}
+
+.sidebar .navbar-nav { margin-top: 20px; }
+.sidebar .navbar-nav > li  { border-bottom: 0.1px solid #585858; }
+
+.nav-item .nav-link .text { font-size: 1em; }
+
+.navbar-toggler {
+  margin-left: 70%;
+}
+
+.wrapper { margin-top: 3.5rem; }
+
+h3 { color: #ec4646; font-weight: bold; padding: 20px 0;  }
+
+.wrapper .sideMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 6.6rem auto auto;
+    width: 13.5rem;
+    transition: all ease 0.25s;
+    transform: translateX(-100%);
+    z-index: 2000;
+}
+
+.wrapper .content {
+    width: 100%;
+    margin-right: 0rem;
+    transition: all ease 0.25s;
+}
+
+.wrapper.active .sideMenu { transform: translateX(0); }
+
+.the_arrow { float: left; margin-top: 12px; }
+
+    .card-counter{
+      box-shadow: 2px 2px 10px #DADADA;
+      margin: 5px;
+      padding: 20px 10px;
+      background-color: #fff;
+      height: 100px;
+      border-radius: 5px;
+      transition: .3s linear all;
+    }
+
+    .card-counter:hover{
+      box-shadow: 4px 4px 20px #DADADA;
+      transition: .3s linear all;
+    }
+
+    .card-counter.primary{
+      background-color: #304ffe;
+      color: #FFF;
+    }
+
+    .card-counter.danger{
+      background-color: #e53935;
+      color: #FFF;
+    }
+
+    .card-counter.success{
+      background-color: #4caf50;
+      color: #FFF;
+    }
+
+    .card-counter.info{
+      background-color: #2979ff;
+      color: #FFF;
+    }
+
+    .card-counter i{
+      font-size: 3em;
+      opacity: 0.2;
+      float: left;
+    }
+
+    .card-counter .count-numbers{
+      position: absolute;
+      right: 35px;
+      top: 20px;
+      font-size: 32px;
+      display: block;
+    }
+
+    .card-counter .count-name{
+      position: absolute;
+      right: 35px;
+      top: 65px;
+      font-style: italic;
+      text-transform: capitalize;
+      opacity: 0.5;
+      display: block;
+      font-size: 18px;
+    }
+
+
+@media (min-width: 992px) {
+  .wrapper .sideMenu {
+    transform: translateX(0); }
+  .wrapper .content {
+    margin-right: 12.5rem; }
+  .wrapper.active .sideMenu {
+    width: 5rem; }
+    .wrapper.active .sideMenu .nav-link {
+      text-align: center; }
+    .wrapper.active .sideMenu .icon {
+      margin-right: 0; }
+    .wrapper.active .sideMenu .text {
+      display: none; }
+  .wrapper.active .content {
+    margin-right: 5rem; }
+
+  }
+
+    @media (max-width: 992px) {
+      .wrapper .sideMenu {
+        transform: translateX(0);
+        margin: 3.4rem auto auto;
+       }
+
+      .wrapper.active .sideMenu { transform: translateX(100%); }
+
+      .wrapper.active body { opacity: 0; }
+
+      .admin-collapse { display: none !important; }
+
+      .user-menu-mobile { display: block; }
+
+      .navbar-brand{ display: none; }
+
+      }
+
+      @media (max-width: 727px){
+        .navbar-toggler {
+          margin-left: 69%;
+        }
+      }
+
+      @media (max-width: 715px){
+        .navbar-toggler {
+          margin-left: 65%;
+        }
+
+        .user-menu-mobile
+        {
+          margin-right: 85%;
+        }
+      }
+
+
+      @media (max-width: 635px){
+        .navbar-toggler {
+          margin-left: 60%;
+        }
+
+        .user-menu-mobile
+        {
+          margin-right: 83%;
+        }
+
+        .the_image_changing { width:120px;height:120px;margin: 16px 32%;background-color: black; }
+      }
+
+
+      @media (max-width: 562px){
+        .navbar-toggler {
+          margin-left: 53%;
+        }
+
+        .user-menu-mobile
+        {
+          margin-right: 83%;
+        }
+      }
+
+
+      @media (max-width: 400px){
+        .navbar-toggler {
+          margin-left: 40%;
+        }
+
+        .user-menu-mobile
+        {
+          margin-right: 73%;
+        }
+
+        .the_image_changing { width:20px;height:20px;background-color: black; }
+      }
+
+.nav-link {
+  display: block;
+  white-space: nowrap;
+   }
+  .nav-link .icon {
+    margin-right: 0.25rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    height: 2rem;
+    width: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+  .nav-link .text {
+    font-size: 0.875rem; }
+
+    .card{
+      border-radius: 0px;
+      margin-top: 50px;
+    }
+
+    .card-header{
+      width: 80%;
+      margin: -30px 10% 5px 10%;
+      background-color: #f5f5f5;
+      color: #000;
+    }
+
+    .title{
+      margin-top: 3px;
+      font-weight: 700;
+    }
+
+
+    .card-header button{
+      float: right;
+      margin: 0;
+    }
+
+    table {
+      color: #212529 !important;
+    }
+
+
+
+
+    @media (min-width: 768px){
+      .circle-tile {
+          margin-bottom: 30px;
+      }
+      }
+
+      .circle-tile {
+          margin-bottom: 15px;
+          text-align: center;
+      }
+
+      .circle-tile-heading {
+          position: relative;
+          width: 80px;
+          height: 80px;
+          margin: 0 auto -40px;
+          border: 3px solid rgba(255,255,255,0.3);
+          border-radius: 100%;
+          color: #fff;
+          transition: all ease-in-out .3s;
+      }
+
+      /* -- Background Helper Classes */
+
+      /* Use these to cuztomize the background color of a div. These are used along with tiles, or any other div you want to customize. */
+
+       .dark-blue {
+          background-color: #34495e;
+      }
+
+      .green {
+          background-color: #16a085;
+      }
+
+      .blue {
+          background-color: #2980b9;
+      }
+
+      .orange {
+          background-color: #f39c12;
+      }
+
+      .red {
+          background-color: #e74c3c;
+      }
+
+      .purple {
+          background-color: #8e44ad;
+      }
+
+      .dark-gray {
+          background-color: #7f8c8d;
+      }
+
+      .gray {
+          background-color: #95a5a6;
+      }
+
+      .light-gray {
+          background-color: #bdc3c7;
+      }
+
+      .yellow {
+          background-color: #f1c40f;
+      }
+
+      /* -- Text Color Helper Classes */
+
+       .text-dark-blue {
+          color: #34495e;
+      }
+
+      .text-green {
+          color: #16a085;
+      }
+
+      .text-blue {
+          color: #2980b9;
+      }
+
+      .text-orange {
+          color: #f39c12;
+      }
+
+      .text-red {
+          color: #e74c3c;
+      }
+
+      .text-purple {
+          color: #8e44ad;
+      }
+
+      .text-faded {
+          color: rgba(255,255,255,0.7);
+      }
+
+
+
+      .circle-tile-heading .fa {
+          line-height: 80px;
+      }
+
+      .circle-tile-content {
+          padding-top: 50px;
+      }
+      .circle-tile-description {
+          text-transform: uppercase;
+      }
+
+      .text-faded {
+          color: rgba(255,255,255,0.7);
+      }
+
+      .circle-tile-number {
+          padding: 5px 0 15px;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 1;
+      }
+
+      .circle-tile-footer {
+          display: block;
+          padding: 5px;
+          color: rgba(255,255,255,0.5);
+          background-color: rgba(0,0,0,0.1);
+          transition: all ease-in-out .3s;
+      }
+
+      .circle-tile-footer:hover {
+          text-decoration: none;
+          color: rgba(255,255,255,0.5);
+          background-color: rgba(0,0,0,0.2);
+      }
